@@ -13,6 +13,12 @@ public class CsvTester {
     @Test
     public void canAssertThatCsvContainsStrings(){
         CSVReader tester =  new CSVReader(new FileReader("C://Users//dshokimov//Downloads//files//file_example_CSV_5000.csv"));
-        assertThat(tester).asString().contains("Mara");
+        assertThat(tester.toString().contains("1"));
+        assertThat(tester.toString().contains("Dulce"));
+        assertThat(tester.toString().contains("Abril"));
+        assertThat(tester.toString().contains("United States"));
+        assertThat(tester.toString().contains("32"));
+        assertThat(tester.toString().contains("15/10/2017"));
+        assertThat(tester.toString().contains("1562"));
     }
 }
