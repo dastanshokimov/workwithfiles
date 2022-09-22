@@ -1,0 +1,7 @@
+{
+  "name": "FIFA23",
+  "price": 215,
+  "available": true,
+  "version": 2.0,
+  "functions": ["buy","setup","update","delete", "open", "close", "online"]
+}
