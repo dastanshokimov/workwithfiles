@@ -8,10 +8,11 @@ import java.io.File;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class XlsTester {
+    String xlsFile = "C://Users//dshokimov//Downloads//files//file_example_XLS_50.xls";
     @SneakyThrows
     @Test
     public void canAssertThatXlsContainsText() {
-        XLS xls = new XLS(new File("C://Users//dshokimov//Downloads//files//file_example_XLS_50.xls"));
+        XLS xls = new XLS(new File(xlsFile));
         assertTrue(xls.excel.getSheetAt(0).getRow(13).getCell(0).toString().equals("13.0"));
         assertTrue(xls.excel.getSheetAt(0).getRow(13).getCell(1).toString().equals("Sherron"));
         assertTrue(xls.excel.getSheetAt(0).getRow(13).getCell(2).toString().equals("Ascencio"));
@@ -25,7 +26,7 @@ public class XlsTester {
     @SneakyThrows
     @Test
     public void canAssertThatXlsHasSpecificNumberOfRows() {
-        XLS xls = new XLS(new File("C://Users//dshokimov//Downloads//files//file_example_XLS_50.xls"));
+        XLS xls = new XLS(new File(xlsFile));
         assertTrue(xls.excel.getSheetAt(0).getPhysicalNumberOfRows() == 51);
     }
 }

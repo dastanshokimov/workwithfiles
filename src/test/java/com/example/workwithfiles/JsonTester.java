@@ -11,11 +11,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 public class JsonTester {
+    String jsonFile = "C://Users//dshokimov//IdeaProjects//workwithfiles//src//main//resources//fifa23.json";
     @SneakyThrows
     @Test
     public void canAssertThatJsonHasCorrectData() {
         ObjectMapper mapper = new ObjectMapper();
-        Game game = mapper.readValue(Paths.get("C://Users//dshokimov//IdeaProjects//workwithfiles//src//main//resources//fifa23.json")
+        Game game = mapper.readValue(Paths.get(jsonFile)
                 .toFile(), Game.class);
 
         assertThat(game.getName().equals("FIFA23"));

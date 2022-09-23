@@ -7,17 +7,19 @@ import java.io.File;
 import static com.codeborne.pdftest.assertj.Assertions.assertThat;
 
 public class PdfTester {
+    String pdfFile = "C://Users//dshokimov//Downloads//files//sample.pdf";
+
     @SneakyThrows
     @Test
     public void canAssertThatPdfContainsText() {
-        PDF pdf = new PDF(new File("C://Users//dshokimov//Downloads//files//sample.pdf"));
+        PDF pdf = new PDF(new File(pdfFile));
         assertThat(pdf.text).containsAnyOf("A Simple PDF File");
     }
 
     @SneakyThrows
     @Test
     public void canAssertThatPdfHasPagination() {
-        PDF pdf = new PDF(new File("C://Users//dshokimov//Downloads//files//sample.pdf"));
+        PDF pdf = new PDF(new File(pdfFile));
         assertThat(pdf.numberOfPages).isGreaterThan(1);
     }
 }

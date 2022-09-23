@@ -9,10 +9,11 @@ import static com.codeborne.pdftest.assertj.Assertions.assertThat;
 
 
 public class CsvTester {
+    String csvFile = "C://Users//dshokimov//Downloads//files//file_example_CSV_5000.csv";
     @SneakyThrows
     @Test
     public void canAssertThatCsvContainsStrings(){
-        CSVReader tester =  new CSVReader(new FileReader("C://Users//dshokimov//Downloads//files//file_example_CSV_5000.csv"));
+        CSVReader tester =  new CSVReader(new FileReader(csvFile));
         assertThat(tester.toString().contains("1"));
         assertThat(tester.toString().contains("Dulce"));
         assertThat(tester.toString().contains("Abril"));
