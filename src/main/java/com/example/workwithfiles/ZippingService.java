@@ -11,11 +11,11 @@ import java.util.zip.ZipOutputStream;
 
 public class ZippingService {
     public static void main(String[] args) throws IOException {
-        String pdfFile = "C://Users//dshokimov//IdeaProjects//workwithfiles//src//main//resources//sample.pdf";
-        String csvFile = "C://Users//dshokimov//IdeaProjects//workwithfiles//src//main//resources//file_example_CSV_5000.csv";
-        String xlsFile = "C://Users//dshokimov//IdeaProjects//workwithfiles//src//main//resources//file_example_XLS_50.xls";
+        String file1 = "C://Users//dshokimov//IdeaProjects//workwithfiles//src//main//resources//sample.pdf";
+        String file2 = "C://Users//dshokimov//IdeaProjects//workwithfiles//src//main//resources//file_example_CSV_5000.csv";
+        String file3 = "C://Users//dshokimov//IdeaProjects//workwithfiles//src//main//resources//file_example_XLS_50.xls";
 
-        List<String> srcFiles = Arrays.asList(pdfFile, csvFile, xlsFile);
+        List<String> srcFiles = Arrays.asList(file1, file2, file3);
         FileOutputStream fos = new FileOutputStream("zipFiles2.zip");
         ZipOutputStream zipOut = new ZipOutputStream(fos);
         for (String srcFile : srcFiles) {
