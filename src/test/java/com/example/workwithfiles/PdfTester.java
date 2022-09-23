@@ -7,7 +7,7 @@ import java.io.File;
 import static com.codeborne.pdftest.assertj.Assertions.assertThat;
 
 public class PdfTester {
-    String pdfFile = "C://Users//dshokimov//Downloads//files//sample.pdf";
+    String pdfFile = "C://Users//dshokimov//IdeaProjects//workwithfiles//src//main//resources//sample.pdf";
 
     @SneakyThrows
     @Test

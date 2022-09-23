@@ -8,7 +8,7 @@ import java.io.File;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class XlsTester {
-    String xlsFile = "C://Users//dshokimov//Downloads//files//file_example_XLS_50.xls";
+    String xlsFile = "C://Users//dshokimov//IdeaProjects//workwithfiles//src//main//resources//file_example_XLS_50.xls";
     @SneakyThrows
     @Test
     public void canAssertThatXlsContainsText() {
