@@ -4,6 +4,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.SneakyThrows;
 import org.junit.jupiter.api.Test;
 import java.nio.file.Paths;
+import java.util.Arrays;
+
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -20,6 +22,7 @@ public class JsonTester {
         assertEquals(game.isAvailable(), true);
         assertEquals(game.getPrice(), 215.0);
         assertEquals(game.getVersion(), 2.0);
+        assertTrue(Arrays.stream(game.getFunctions()).toList().equals(Arrays.stream((new String[] {"buy","setup","update","delete", "open", "close", "online"})).toList()));
     }
 
 }
