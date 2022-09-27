@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Sep 27 10:51:19 ALMT 2022","Tue Sep 27 10:51:19 ALMT 2022","484","","com.example.workwithfiles.JsonTester","","com.example.workwithfiles.JsonTester","canAssertThatJsonHasCorrectData","canAssertThatJsonHasCorrectData()",""
+"failed","Tue Sep 27 10:51:19 ALMT 2022","Tue Sep 27 10:51:20 ALMT 2022","378","","com.example.workwithfiles.PdfTester","","com.example.workwithfiles.PdfTester","canAssertThatPdfHasPagination","canAssertThatPdfHasPagination()",""
+"passed","Tue Sep 27 10:51:18 ALMT 2022","Tue Sep 27 10:51:19 ALMT 2022","530","","com.example.workwithfiles.XlsTester","","com.example.workwithfiles.XlsTester","canAssertThatXlsHasSpecificNumberOfRows","canAssertThatXlsHasSpecificNumberOfRows()",""
+"skipped","Tue Sep 27 10:51:18 ALMT 2022","Tue Sep 27 10:51:18 ALMT 2022","1","","com.example.workwithfiles.CsvTester","","com.example.workwithfiles.CsvTester","canAssertThatCsvContainsStrings","canAssertThatCsvContainsStrings()",""
+"failed","Tue Sep 27 10:51:20 ALMT 2022","Tue Sep 27 10:51:20 ALMT 2022","16","","com.example.workwithfiles.PdfTester","","com.example.workwithfiles.PdfTester","canAssertThatPdfContainsText","canAssertThatPdfContainsText()",""
+"passed","Tue Sep 27 10:51:19 ALMT 2022","Tue Sep 27 10:51:19 ALMT 2022","17","","com.example.workwithfiles.XlsTester","","com.example.workwithfiles.XlsTester","canAssertThatXlsContainsText","canAssertThatXlsContainsText()",""

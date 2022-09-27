@@ -1,7 +1,9 @@
 package com.example.workwithfiles;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.qameta.allure.Step;
 import lombok.SneakyThrows;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import java.nio.file.Paths;
 import java.util.Arrays;
@@ -14,6 +16,7 @@ public class JsonTester {
     String jsonFile = "C://Users//dshokimov//IdeaProjects//workwithfiles//src//main//resources//fifa23.json";
     @SneakyThrows
     @Test
+    @Step("Positive")
     public void canAssertThatJsonHasCorrectData() {
         ObjectMapper mapper = new ObjectMapper();
         Game game = mapper.readValue(Paths.get(jsonFile)

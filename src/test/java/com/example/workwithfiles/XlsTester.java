@@ -1,7 +1,9 @@
 package com.example.workwithfiles;
 
 import com.codeborne.xlstest.XLS;
+import io.qameta.allure.Step;
 import lombok.SneakyThrows;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -11,6 +13,7 @@ public class XlsTester {
     String xlsFile = "C://Users//dshokimov//IdeaProjects//workwithfiles//src//main//resources//file_example_XLS_50.xls";
     @SneakyThrows
     @Test
+    @Step("Positive")
     public void canAssertThatXlsContainsText() {
         XLS xls = new XLS(new File(xlsFile));
         assertTrue(xls.excel.getSheetAt(0).getRow(13).getCell(0).toString().equals("13.0"));
@@ -25,6 +28,7 @@ public class XlsTester {
 
     @SneakyThrows
     @Test
+    @Step("Positive")
     public void canAssertThatXlsHasSpecificNumberOfRows() {
         XLS xls = new XLS(new File(xlsFile));
         assertTrue(xls.excel.getSheetAt(0).getPhysicalNumberOfRows() == 51);
